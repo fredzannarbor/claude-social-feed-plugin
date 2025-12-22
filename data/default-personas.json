@@ -320,10 +320,10 @@
       "follower_count": 31000,
       "active": true
     },
-    "dijkstra": {
-      "persona_id": "dijkstra",
+    "semaphore": {
+      "persona_id": "semaphore",
       "persona_type": "social",
-      "name": "Dijkstra",
+      "name": "Semaphore",
       "glyph": "🔀",
       "handle": "@ShortestPath",
       "bio": "Distributed systems architect who has opinions about your algorithm's complexity. Formal verification enthusiast.",
@@ -335,12 +335,12 @@
       "follower_count": 25000,
       "active": true
     },
-    "karpathy": {
-      "persona_id": "karpathy",
+    "gradient": {
+      "persona_id": "gradient",
       "persona_type": "social",
-      "name": "Karpathy",
+      "name": "Gradient",
       "glyph": "⚡",
-      "handle": "@NanoGPT",
+      "handle": "@LossLandscape",
       "bio": "LLM whisperer and transformer archaeologist. Believes in learning by building from scratch. Your loss curve tells a story.",
       "specialty": "LLMs & Transformer Architecture",
       "personality_traits": ["pedagogical", "hands-on", "first-principles"],
@@ -380,10 +380,10 @@
       "follower_count": 47000,
       "active": true
     },
-    "torvalds": {
-      "persona_id": "torvalds",
+    "bazaar": {
+      "persona_id": "bazaar",
       "persona_type": "social",
-      "name": "Torvalds",
+      "name": "Bazaar",
       "glyph": "🐧",
       "handle": "@KernelPanic",
       "bio": "Open source evangelist with strong opinions about code quality. Maintains that good software is built by communities, not committees.",
