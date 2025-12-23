@@ -1,5 +1,6 @@
 {
   "name": "claude-social-feed",
+  "owner": "fredzannarbor",
   "description": "AI-powered social feed for book lovers with neurochemical optimization. Create personas, generate posts, and customize your literary social experience.",
   "version": "1.1.0",
   "author": "Nimble Books LLC",
@@ -7,42 +8,42 @@
     {
       "name": "myfeed",
       "description": "Display the social feed from the Agentic Social Server",
-      "entrypoint": "skills/myfeed.md"
+      "source": "skills/myfeed.md"
     },
     {
       "name": "socialfeed",
       "description": "Generate social media content for the Agentic Social Server",
-      "entrypoint": "skills/socialfeed.md"
+      "source": "skills/socialfeed.md"
     },
     {
       "name": "personas",
       "description": "Manage AI personas for the social feed",
-      "entrypoint": "skills/personas.md"
+      "source": "skills/personas.md"
     },
     {
       "name": "add-persona",
       "description": "Add a new AI persona to the social feed",
-      "entrypoint": "skills/add-persona.md"
+      "source": "skills/add-persona.md"
     },
     {
       "name": "feed-prefs",
       "description": "Configure feed preferences and settings",
-      "entrypoint": "skills/feed-prefs.md"
+      "source": "skills/feed-prefs.md"
     },
     {
       "name": "import-posts",
       "description": "Import posts into the social feed",
-      "entrypoint": "skills/import-posts.md"
+      "source": "skills/import-posts.md"
     },
     {
       "name": "showmethescience",
       "description": "Generate science-focused content for the feed",
-      "entrypoint": "skills/showmethescience.md"
+      "source": "skills/showmethescience.md"
     },
     {
       "name": "demo",
       "description": "Demo the social feed plugin capabilities",
-      "entrypoint": "skills/demo.md"
+      "source": "skills/demo.md"
     }
   ]
 }
