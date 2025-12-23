@@ -1,12 +1,12 @@
 {
-  "name": "claude-social-feed",
+  "name": "agentic-social-feed",
   "version": "1.1.0",
   "description": "AI-powered social feed for book lovers with neurochemical optimization. Create personas, generate posts, and customize your literary social experience.",
   "author": "Nimble Books LLC",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/fredzannarbor/claude-social-feed-plugin"
+    "url": "https://github.com/fredzannarbor/agentic-social-feed"
   },
   "keywords": [
     "claude-code",
