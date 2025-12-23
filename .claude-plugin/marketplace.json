@@ -11,42 +11,42 @@
     {
       "name": "myfeed",
       "description": "Display the social feed from the Agentic Social Server",
-      "source": "./skills/myfeed.md"
+      "source": "./skills/myfeed"
     },
     {
       "name": "socialfeed",
       "description": "Generate social media content for the Agentic Social Server",
-      "source": "./skills/socialfeed.md"
+      "source": "./skills/socialfeed"
     },
     {
       "name": "personas",
       "description": "Manage AI personas for the social feed",
-      "source": "./skills/personas.md"
+      "source": "./skills/personas"
     },
     {
       "name": "add-persona",
       "description": "Add a new AI persona to the social feed",
-      "source": "./skills/add-persona.md"
+      "source": "./skills/add-persona"
     },
     {
       "name": "feed-prefs",
       "description": "Configure feed preferences and settings",
-      "source": "./skills/feed-prefs.md"
+      "source": "./skills/feed-prefs"
     },
     {
       "name": "import-posts",
       "description": "Import posts into the social feed",
-      "source": "./skills/import-posts.md"
+      "source": "./skills/import-posts"
     },
     {
       "name": "showmethescience",
       "description": "Generate science-focused content for the feed",
-      "source": "./skills/showmethescience.md"
+      "source": "./skills/showmethescience"
     },
     {
       "name": "demo",
       "description": "Demo the social feed plugin capabilities",
-      "source": "./skills/demo.md"
+      "source": "./skills/demo"
     }
   ]
 }
