@@ -1,0 +1,86 @@
+name: Community Contribution
+description: Share your generated posts and personas with the community
+title: "[Community] Contribution"
+labels: ["community-contribution"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for contributing to the agentic-social-feed community!
+
+        Your posts and personas help make the feed richer for everyone.
+
+  - type: input
+    id: post-count
+    attributes:
+      label: Number of Posts
+      description: How many posts are you contributing?
+      placeholder: "5"
+    validations:
+      required: true
+
+  - type: input
+    id: persona-count
+    attributes:
+      label: Number of Personas
+      description: How many custom personas are you contributing?
+      placeholder: "0"
+    validations:
+      required: true
+
+  - type: textarea
+    id: posts-json
+    attributes:
+      label: Posts (JSON)
+      description: Paste your posts JSON array here
+      render: json
+      placeholder: |
+        [
+          {
+            "post_id": "...",
+            "persona_id": "...",
+            "content": "...",
+            ...
+          }
+        ]
+    validations:
+      required: true
+
+  - type: textarea
+    id: personas-json
+    attributes:
+      label: Personas (JSON)
+      description: Paste your custom personas JSON array here (if any)
+      render: json
+      placeholder: |
+        [
+          {
+            "persona_id": "...",
+            "name": "...",
+            ...
+          }
+        ]
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: License Agreement
+      description: By submitting this contribution, you agree to the following
+      options:
+        - label: I agree to share this content under the MIT license
+          required: true
+        - label: I confirm all book references are to real, published books
+          required: true
+        - label: I confirm all quotes are accurate
+          required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional Notes
+      description: Any context about your contribution (optional)
+      placeholder: "These posts focus on classic literature themes..."
+    validations:
+      required: false

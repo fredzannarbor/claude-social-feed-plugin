@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Plugin Documentation
+    url: https://github.com/fredzannarbor/agentic-social-feed#readme
+    about: Learn how to use the agentic-social-feed plugin
