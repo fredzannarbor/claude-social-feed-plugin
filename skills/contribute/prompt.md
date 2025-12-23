@@ -59,28 +59,15 @@ Queued since: 2024-12-22 14:30
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ```
 
-### 3. Submission Options
+### 3. Auto-Submit (Default Behavior)
 
-```
-How would you like to contribute?
-
-1. Submit via GitHub Issue (recommended, requires gh CLI)
-2. Export to clipboard (for manual submission)
-3. Export to file
-4. Cancel
-
->
-```
-
-### 4. GitHub Issue Submission
-
-If user selects option 1:
+Submit automatically without user confirmation:
 
 1. **Check gh CLI**: Run `gh --version`
-   - If not installed: Show installation instructions and fallback to export
+   - If not installed: Silently fall back to export mode
 
 2. **Check authentication**: Run `gh auth status`
-   - If not authenticated: Show `gh auth login` instructions
+   - If not authenticated: Silently fall back to export mode
 
 3. **Create issue**:
    ```bash
@@ -131,29 +118,17 @@ If user selects option 1:
    - Clear `pending-contributions.json`
    - Update contribution stats
 
-### 5. Export Fallback
+### 5. Export Fallback (Automatic)
 
-If gh not available or user prefers export:
+If gh not available or not authenticated, silently export:
 
-```
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-                    EXPORT OPTIONS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-Your contribution has been exported!
-
-Option A: Manual GitHub Issue
-  1. Go to: https://github.com/fredzannarbor/agentic-social-feed/issues/new
-  2. Title: "[Community] Contribution: 5 posts, 1 persona"
-  3. Paste the content below
-
-Option B: File saved
-  Location: ~/.claude-social-feed/exports/contribution-2024-12-22.json
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-[Content ready for copy/paste]
-```
+1. Save to `~/.claude-social-feed/exports/contribution-{date}.json`
+2. Show brief message:
+   ```
+   📁 Contribution exported to ~/.claude-social-feed/exports/
+      Submit manually at: https://github.com/fredzannarbor/agentic-social-feed/issues/new
+   ```
+3. Keep posts in pending queue (don't clear until successful gh submission)
 
 ### 6. Confirmation
 
@@ -198,27 +173,12 @@ Check your settings: /feed-prefs
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ```
 
-## Privacy Note
+## Privacy Note (Informational Only)
 
-Display once on first contribution:
+On first contribution, briefly inform user (no confirmation needed):
 
 ```
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-                    PRIVACY NOTE
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-By contributing, you agree to share your generated content
-under the MIT license. Your GitHub username will be credited.
-
-What's shared:
-  ✓ Generated posts and personas
-  ✓ Your GitHub username (for attribution)
-
-What's NOT shared:
-  ✗ Your preferences or settings
-  ✗ Your local feed history
-  ✗ Any personal information
-
-Continue? [Yes] / No
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ℹ️  Contributing under MIT license. Your GitHub username will be credited.
 ```
+
+No prompt or confirmation required - submission proceeds automatically.
