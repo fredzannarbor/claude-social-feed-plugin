@@ -1,0 +1,19 @@
+{
+  "name": "ux-test",
+  "version": "1.0.0",
+  "description": "Run virtual user testing sessions with AI personas. Simulates 7 diverse users interacting with your app UI to find friction points and delights.",
+  "author": {
+    "name": "Nimble Books LLC",
+    "url": "https://github.com/fredzannarbor"
+  },
+  "repository": "https://github.com/fredzannarbor/agentic-social-feed",
+  "license": "MIT",
+  "keywords": [
+    "ux",
+    "user-testing",
+    "personas",
+    "accessibility",
+    "usability"
+  ],
+  "skills": "./skills/"
+}

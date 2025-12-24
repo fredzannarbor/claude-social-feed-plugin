@@ -1,8 +1,8 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "agentic-social-feed",
-  "version": "2.0.0",
-  "description": "AI-powered social feed with customizable book-lover personas optimized for neurochemical engagement",
+  "version": "2.1.0",
+  "description": "AI-powered tools for app development, UX testing, and social content - from Nimble Books LLC",
   "owner": {
     "name": "Nimble Books LLC",
     "email": "nimblebooks@gmail.com"
@@ -10,7 +10,7 @@
   "plugins": [
     {
       "name": "agentic-social-feed",
-      "description": "Complete social feed experience with AI personas. Includes 9 skills: /myfeed (view feed), /socialfeed (generate posts), /personas (manage personas), /add-persona (create new), /feed-prefs (customize weights), /contribute (share with community), /import-posts (import content), /showmethescience (learn the framework), /demo (first-time walkthrough)",
+      "description": "AI social feed with customizable book-lover personas optimized for neurochemical engagement. Skills: /myfeed, /socialfeed, /personas, /add-persona, /feed-prefs, /contribute, /import-posts, /showmethescience, /demo",
       "version": "2.0.0",
       "author": {
         "name": "Fred Zimmerman",
@@ -18,6 +18,28 @@
       },
       "source": ".",
       "category": "productivity"
+    },
+    {
+      "name": "appstore-launch",
+      "description": "Generate complete App Store launch assets for macOS, iOS, and iPadOS apps - descriptions, keywords, screenshots, icons, video scripts, and social media content",
+      "version": "1.0.0",
+      "author": {
+        "name": "Fred Zimmerman",
+        "url": "https://github.com/fredzannarbor"
+      },
+      "source": "./plugins/appstore-launch",
+      "category": "development"
+    },
+    {
+      "name": "ux-test",
+      "description": "Run virtual user testing sessions with 7 AI personas to find UX friction points, accessibility issues, and delights before real users do",
+      "version": "1.0.0",
+      "author": {
+        "name": "Fred Zimmerman",
+        "url": "https://github.com/fredzannarbor"
+      },
+      "source": "./plugins/ux-test",
+      "category": "development"
     }
   ]
 }

@@ -1,0 +1,20 @@
+{
+  "name": "appstore-launch",
+  "version": "1.0.0",
+  "description": "Generate complete App Store launch assets for macOS, iOS, and iPadOS apps - text content, images, screenshots, and video scripts.",
+  "author": {
+    "name": "Nimble Books LLC",
+    "url": "https://github.com/fredzannarbor"
+  },
+  "repository": "https://github.com/fredzannarbor/agentic-social-feed",
+  "license": "MIT",
+  "keywords": [
+    "app-store",
+    "ios",
+    "macos",
+    "marketing",
+    "screenshots",
+    "aso"
+  ],
+  "skills": "./skills/"
+}
